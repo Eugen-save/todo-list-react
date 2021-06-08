@@ -5,6 +5,7 @@
     transition: color 0.3s;
     font-size: 15px;
     color: teal;
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
