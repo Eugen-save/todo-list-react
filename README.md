@@ -1,5 +1,16 @@
 # To do List
 
+https://eugen-save.github.io/todo-list-react/
+## Used technologies
+- ES6+ features
+- BEM
+- React
+## Description
+In this project i created simple To-Do list. Functionality off this application will help you manage your day:
+1. You can add new tasks by clicking button "Dodaj zadanie" or "Enter"
+2. You can identify your task as realised by clicking green button.
+3. You can also delete tasks by clicking red button
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
