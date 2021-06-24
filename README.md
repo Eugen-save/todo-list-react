@@ -10,6 +10,7 @@ In this project i created simple To-Do list. Functionality off this application 
 1. You can add new tasks by clicking button "Dodaj zadanie" or "Enter"
 2. You can identify your task as realised by clicking green button.
 3. You can also delete tasks by clicking red button
+4. Tasks will be saved in Local Storage, so even after re-opening your browser you won't loose your tasks
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
