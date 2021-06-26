@@ -1,33 +1,33 @@
-.form {
+import styled, {css} from "styled-components";
+
+export const Blank = styled.form`
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
-}
 
 @media (max-width: 767px) {
-    .form {
         grid-template-columns: 1fr;
-    }
 }
+`;
 
-.form__input {
+export const Input = styled.input`
     padding: 10px;
     border: 1px solid #ddd;
-}
+`;
 
-.form__button {
+export const Button = styled.button`
     background-color: teal;
     color: white;
     padding: 10px;
     border: none;
     transition: 0.3s;
-}
 
-.form__button:hover {
+&:hover {
     background-color: hsl(180, 100%, 35%);
     transform: scale(1.2);
 }
 
-.form__button:active {
+&:active {
     background-color: hsl(180, 100%, 40%);
 }
+`;
