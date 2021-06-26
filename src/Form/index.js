@@ -1,7 +1,13 @@
-import { useState } from 'react';
-import {Blank, Input, Button} from "./styled";
+import { useState, useRef } from 'react';
+import { Blank, Input, Button } from "./styled";
 
 const Form = ({ addNewTask }) => {
+
+    const inputRef = useRef(null);
+    const focusInput = () => {
+        inputRef.current.focus();
+    };
+
     const [newTaskContent, setNewTaskContent] = useState("");
 
     const onFormSubmit = (event) => {
@@ -19,18 +25,23 @@ const Form = ({ addNewTask }) => {
 
     const onChange = ({ target }) => setNewTaskContent(target.value);
 
-return (
-    <Blank
-        onSubmit={onFormSubmit}
-    >
-        <Input
-            value={newTaskContent}
-            placeholder="Co jest do zrobienia?"
-            onChange={onChange}
-        />
-        <Button>Dodaj zadanie</Button>
-    </Blank>
-);
+    return (
+        <Blank
+            onSubmit={onFormSubmit}
+        >
+            <Input
+                ref={inputRef}
+                value={newTaskContent}
+                placeholder="Co jest do zrobienia?"
+                onChange={onChange}
+            />
+            <Button
+                onClick={focusInput}
+            >
+                Dodaj zadanie
+            </Button>
+        </Blank>
+    );
 };
 
 export default Form;
