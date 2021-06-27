@@ -2,8 +2,17 @@ import { useState, useEffect } from "react";
 
 export const useTasks = () => {
 
-    const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem('myTasksInLocalStorage') || []),
+
+    const tasksFromLocalStorage = localStorage.getItem("tasks");
+    const [tasks, setTasks] = useState(
+        tasksFromLocalStorage
+          ? JSON.parse(tasksFromLocalStorage)
+          : []
     );
+
+    useEffect(() => {
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    }, [tasks]);
 
     const removeTask = (id) => {
         setTasks(tasks => tasks.filter(task => task.id !== id));
@@ -37,9 +46,7 @@ export const useTasks = () => {
         ]);
     };
 
-    useEffect(() => {
-        localStorage.setItem('myTasksInLocalStorage', JSON.stringify(tasks));
-    }, [tasks]);
+
 
     return {
         tasks,
