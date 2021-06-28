@@ -5,7 +5,8 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
-import {useTasks} from "./useTasks"
+import {useTasks} from "./useTasks";
+import { GlobalStyle } from "./styled";
 
 function App() {
 
@@ -24,6 +25,8 @@ const {
 } = useTasks();
 
   return (
+    <>
+    <GlobalStyle />
     <Container>
       <Header title="Lista zadań" />
       <Section
@@ -50,6 +53,7 @@ const {
           />}
       />
     </Container>
+    </>
   );
 };
 

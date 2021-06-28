@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 export const useTasks = () => {
 
-
     const tasksFromLocalStorage = localStorage.getItem("tasks");
     const [tasks, setTasks] = useState(
         tasksFromLocalStorage
@@ -45,8 +44,6 @@ export const useTasks = () => {
             },
         ]);
     };
-
-
 
     return {
         tasks,
