@@ -14,9 +14,9 @@ export const Header = styled.header`
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        grid-template-columns: 1fr;
-    }
+        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+            grid-template-columns: 1fr;
+        }
 `;
 
 export const Title = styled.h2`
@@ -24,9 +24,9 @@ export const Title = styled.h2`
     margin: 0;
     padding: 20px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        padding-bottom: 0;
-    }
+        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+            padding-bottom: 0;
+        }
 `;
 
 export const SectionBody = styled.div`

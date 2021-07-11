@@ -5,9 +5,9 @@ export const Wrapper = styled.form`
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 
-@media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
-}
+    }
 `;
 
 export const Input = styled.input`
@@ -22,16 +22,16 @@ export const Button = styled.button`
     border: none;
     transition: 0.3s;
 
-&:hover {
-    filter: brightness(105%);
-    transform: scale(1.2);
+    &:hover {
+        filter: brightness(105%);
+        transform: scale(1.2);
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        transform: none;
-}
-}
+            @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+                transform: none;
+             }
+    };
 
-&:active {
-    filter: brightness(110%);
-}
+    &:active {
+        filter: brightness(110%);
+    }
 `;

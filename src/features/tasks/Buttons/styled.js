@@ -17,20 +17,20 @@ export const Button = styled.button`
     font-size: 15px;
     color: ${({ theme }) => theme.colors.teal};
 
-@media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        flex-basis: 100%;
-        margin: 10px;
-}
+        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+            flex-basis: 100%;
+            margin: 10px;
+        }
 
-&:hover {
-    filter: brightness(105%);
-}
+        &:hover {
+            filter: brightness(105%);
+        }
 
-&:active {
-    filter: brightness(110%);
-}
+        &:active {
+            filter: brightness(110%);
+        }
 
-&:disabled {
-    color: ${({ theme }) => theme.colors.silver};
-}
+        &:disabled {
+            color: ${({ theme }) => theme.colors.silver};
+        }
 `;
