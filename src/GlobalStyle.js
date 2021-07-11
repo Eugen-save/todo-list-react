@@ -12,7 +12,10 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #eee;
+  background: ${({theme}) => theme.colors.gallery};
+  max-width: 900px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 button {

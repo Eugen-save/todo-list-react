@@ -27,33 +27,33 @@ export const Content = styled.span`
 
 export const Button = styled.button`
     border: none;
-    color: white;
+    color: ${({ theme }) => theme.colors.white};
     width: 30px;
     height: 30px;
     padding: 0;
     transition: background 0.3s;
 
     ${({ toggleDone }) => toggleDone && css`
-       background-color: green;
+       background-color: ${({ theme }) => theme.colors.emerald};
 
        &:hover {
-        background-color: hsl(120, 100%, 35%);  
+        filter: brightness(110%);  
        }
 
        &:active {
-        background-color: hsl(120, 100%, 45%);
+         filter: brightness(120%);
        }
     `}
 
     ${({ remove }) => remove && css`
-        background-color: red;
+        background-color: ${({theme}) => theme.colors.cardinal};
 
         &:hover {
-        background-color: hsl(0, 100%, 60%);  
+         filter: brightness(110%);   
        }
 
        &:active {
-        background-color: hsl(0, 100%, 65%);
+         filter: brightness(120%);
        }
     `}
 
