@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
+
+const activeClassName = "active";
 
 export const List = styled.ul`
    padding: 0;
@@ -46,7 +49,7 @@ export const Button = styled.button`
     `}
 
     ${({ remove }) => remove && css`
-        background-color: ${({theme}) => theme.colors.cardinal};
+        background-color: ${({ theme }) => theme.colors.cardinal};
 
         &:hover {
          filter: brightness(110%);   
@@ -56,6 +59,14 @@ export const Button = styled.button`
          filter: brightness(120%);
        }
     `}
+`;
 
+export const StyledLink = styled(Link).attrs(() => ({
+  activeClassName,
+}))`
+  &.${activeClassName} {
 
+  }
+    color: ${({ theme }) => theme.colors.teal};
+    text-decoration: none;
 `;
