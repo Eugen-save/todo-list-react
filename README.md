@@ -2,15 +2,35 @@
 
 https://eugen-save.github.io/todo-list-react/
 ## Used technologies
-- ES6+ features
-- BEM
-- React
+* Semantic HTML
+* CSS
+* Media queries
+* Grid
+* Flexbox
+* ES6+ features
+* Immutability
+* React
+* Webpack
+* Hooks (useState, useEffect useRef, useSelector, useDispatch, useHistory, useLocation)
+* localStorage
+* Styled-components
+* custom Hooks
+* Redux
+* Redux Toolkit
+* Redux-Saga
+* React Router
 ## Description
 In this project i created simple To-Do list. Functionality off this application will help you manage your day:
 1. You can add new tasks by clicking button "Dodaj zadanie" or "Enter"
 2. You can identify your task as realised by clicking green button.
 3. You can also delete tasks by clicking red button
 4. Tasks will be saved in Local Storage, so even after re-opening your browser you won't loose your tasks
+5. Now you can filter your tasks in search panel, just type something you need and click Enter
+6. You can open every taks to get information if it is done or not
+
+All this functionality you can find on below gif.
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
