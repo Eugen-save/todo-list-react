@@ -10,16 +10,19 @@ export default () => (
             body={
                 <>
                     <p>Nazywam sie Eugeniusz. Pochodzę z Białorusi, ale już kilka lat mieszkam w Polsce, obecnie w
-                        Warszawie. Fotografia jest moją pasją już 10 lat. Zmieniłem róźne styli fotografowania, również jak
-                        próbowałem sobie prawie we wszystkich dziedzinach, takich jak <i>Food</i>, <i>Interior</i> i <i>Sport
-                            Photography</i>.
-                    </p>
-                    <p>
-                        Najbardziej pasjunującą dziedziną dla mnie jest <i>Street Fashion</i>, tym samym łącząc moją pasję do
-                        wielkich miast i modnie ubranych ludzi. Jeśli jesteś zainteresowany, możesz <a class="main__outerLink"
+                        Warszawie. Główną moją pasją jest fotografia, zajmuję ją już 10 lat. Jeśli jesteś zainteresowany, możesz <a class="main__outerLink"
                             rel="noreferrer noopener" target="_blank" href="https://instagram.com/eugen.save"
                             title="Moje portfolio na instagramie">zobaczyć
                             zdjęcia które robię w profilu na Instagramie</a>
+                    </p>
+                    <p>
+                        Poza fotografią pracuję w korporacji w zespole zakupów przy departamencie IT. 
+                        Zajmuję się kupnem sprzętu komputerowego, serwerów i licencji na potrzeby firmy.
+                        Można powiedzieć że technologię są moją drugą pasją, lubię śledzić nowości technologiczne i to jak rozwija się świat. 🛰
+                        W sumie to wszystko stało powodem że zacząłem naukę programowania, bo chcę stać częścią światu IT i móc tworzyć coś fajnego 😎
+                    </p>
+                    <p>
+                        Wolny czas spędzam z swoją córką i żoną, uważam że rodzina jest najważnejszym spędzeniem czasu w życiu człowieka 🥰 
                     </p>
                     </>}
         />
